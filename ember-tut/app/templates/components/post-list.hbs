@@ -1,5 +1,5 @@
 <span>Title:</span>
-{{input value=postAuthor}}
+{{input value=postTitle}}
 <span>Text:</span>
 {{textarea value=postText cols="60" rows="6"}}
 <button {{action "addPost"}}>Post</button>
@@ -7,7 +7,7 @@
 <ul class="post--listing">
 	{{#each posts as |post|}}
 		<li>
-			<h4>{{post.author}}</h4>
+			<h4>{{post.title}}</h4>
 			<span>{{post.text}}</span>
 		</li>
 		<hr class="divider slim">

@@ -36,15 +36,15 @@ app.get('/questions', function (req, res) {
 app.post('/questions', function(req, res) {
 	// Parse response
 	var body = req.body;
+    if(!body.hasOwnProperty("title") || typeof body.title != "string") {
+        return res.status(400).json({ error: "Invalid or missing property 'title'." });
+    }
 	if(!body.hasOwnProperty("text") || typeof body.text != "string") {
 		return res.status(400).json({ error: "Invalid or missing property 'text'." });
 	}
-	if(!body.hasOwnProperty("author") || typeof body.author != "string") {
-		return res.status(400).json({ error: "Invalid or missing property 'author'." });
-	}
 	var question = {
+        title: req.body.title,
 		text: req.body.text,
-		author: req.body.author,
 	};
 
 	// Save to file
