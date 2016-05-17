@@ -1,0 +1,8 @@
+{{input value=postText}}
+{{input value=postAuthor}}
+<button {{action "addPost"}}>Post</button>
+<ul>
+	{{#each posts as |post|}}
+		<li>{{post.text}} from {{post.author}}</li>
+	{{/each}}
+</ul>
