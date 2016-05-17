@@ -1,0 +1,22 @@
+.divider {
+  border-top: 2px solid #bbbcbe;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.divider.slim {
+  border-width: 1px;
+}
+
+#title {
+  margin-bottom: 0;
+}
+
+ul.post--listing {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.-margin-bottom--large {
+  margin-bottom: 30px;
+}
