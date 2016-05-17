@@ -13,6 +13,8 @@ export default Ember.Component.extend({
 
 			this.sendAction('action', post);
 			this.get('posts').pushObject(post);
+			this.set('postTitle', '');
+			this.set('postText', '');
 		}
 	}
 });
