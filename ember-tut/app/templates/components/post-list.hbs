@@ -1,5 +1,7 @@
-{{input value=postText}}
+<span>Title:</span>
 {{input value=postAuthor}}
+<span>Text:</span>
+{{textarea value=postText cols="60" rows="6"}}
 <button {{action "addPost"}}>Post</button>
 <ul>
 	{{#each posts as |post|}}
