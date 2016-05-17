@@ -38,6 +38,7 @@ ul.post--listing h3 {
 
 .-flex .post--button {
   width: 10%;
+  min-width: 50px;
   color: #ffffff;
   background-color: #de6212;
   border-radius: 0px;

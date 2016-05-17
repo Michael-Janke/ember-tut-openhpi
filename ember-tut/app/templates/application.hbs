@@ -1,5 +1,6 @@
-{{#ember-wormhole to="questions"}}
+{{#ember-wormhole to=destinationId}}
   <h4>Coole Posts</h4>
+  <button {{action "switchWormhole"}}>Move</button>
   <hr class="divider -margin-bottom--large">
   {{post-list posts=model action="postPosts"}}
   {{outlet}}
