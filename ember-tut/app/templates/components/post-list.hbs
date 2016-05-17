@@ -1,13 +1,15 @@
-<span>Title:</span>
-{{input value=postTitle}}
-<span>Text:</span>
-{{textarea value=postText cols="60" rows="6"}}
-<button {{action "addPost"}}>Post</button>
+<div class="-flex">
+	<span>Title:</span>
+	{{input value=postTitle}}
+	<span>Text:</span>
+	{{textarea value=postText cols="60" rows="4"}}
+	<button class="post--button" {{action "addPost"}}>Post</button>
+</div>
 <hr class="divider slim -margin-bottom--large">
 <ul class="post--listing">
 	{{#each posts as |post|}}
 		<li>
-			<h4>{{post.title}}</h4>
+			<h3>{{post.title}}</h3>
 			<span>{{post.text}}</span>
 		</li>
 		<hr class="divider slim">
