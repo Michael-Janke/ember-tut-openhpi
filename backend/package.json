@@ -1,0 +1,13 @@
+{
+  "name": "ember-hands-on-backend",
+  "version": "1.0.0",
+  "main": "backend.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend.js"
+  }
+}
